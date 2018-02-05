@@ -8,6 +8,7 @@ WORKDIR /
 RUN git clone https://github.com/GaryDoooo/emoji_game.git 
 # RUN mv /emoji_game/* .
 WORKDIR /app
+RUN ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
 RUN npm install
 RUN apt-get update
 RUN apt-get install -y python3 python3-pip figlet libcurl4-openssl-dev 
