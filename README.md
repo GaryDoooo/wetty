@@ -18,5 +18,9 @@ docker build .
 docker run --name term -p 80:3000 -dt THE_DOCKER_IMAGE_BUILT
 ```
 
+To Clone this branch:
+```
+git clone https://github.com/GaryDoooo/wetty.git --branch emoji_game_wetty --single-branch
+```
 Visit the appropriate URL in your browser (`[localhost|$(boot2docker ip)]`).  
 
